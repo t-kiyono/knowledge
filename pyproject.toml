@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "knowledge"
+version = "0.1.0"
+description = ""
+authors = ["t-kiyono <t-kiyono@be-geek.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs-material = "^9.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
