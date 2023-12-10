@@ -1,3 +1,44 @@
+# Project information
 site_name: DEVFIT Docs
+site_url: https://docs.devfit.net/
+site_author: Takayuki Kiyono
+site_description: >-
+  This documentation is the knowledge base
+
+# Repository
+repo_name: t-kiyono/knowledge
+repo_url: https://github.com/t-kiyono/knowledge
+
+# Copyright
+copyright: Copyright &copy; 2023 Takayuki Kiyono
+
+# Configuration
 theme:
   name: material
+  font:
+    text: Noto Serif JP
+    code: Roboto Mono
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+plugins:
+  - search:
+      enabled: true
+  - tags:
+      tags_file: index.md
